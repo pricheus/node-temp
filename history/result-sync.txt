@@ -1,0 +1,1 @@
+hello here is the result: hello this is first text file inside here!, hello this is second text file inside here! 

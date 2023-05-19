@@ -101,4 +101,20 @@ const os = require('os');
         });
 
         server.listen(5004)
-        
+
+// event module
+const EventEmitter = require('events');
+
+const customEmitter = new EventEmitter();
+
+customEmitter.on('response', function(){
+    console.log('data received')
+} );
+customEmitter.on('response', function(name, id){
+    console.log(`we can overwrite as we want : ${name} ${id}` )
+} );
+
+customEmitter.emit('response', 'john', 34)
+       
+//stream module
+
